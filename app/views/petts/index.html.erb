@@ -1,0 +1,10 @@
+    <h1>All petts</h1>
+
+    <% @petts.each do |pett| %>
+    <h2><%= pett.name %></h2>
+    <a href="/petts/<%= pett.name %>"><%= pett.name%> </a>
+
+    <p>Breed: <%= pett.breed %></p>
+
+    <img src=<%=pett.image%> width=50% height=auto >
+    <% end %>
